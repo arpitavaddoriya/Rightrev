@@ -1,0 +1,152 @@
+
+element.style {
+  display: block;
+  translate: none;
+  rotate: none;
+  scale: none;
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+/* Block with primary green background and pattern */
+.block-hero {
+  background-color: #0b362c; /* Medium Green */
+  background-image: url('your-pattern-image.png'); /* Optional background pattern image */
+  background-repeat: repeat; /* You can adjust this depending on your pattern */
+  background-size: cover; /* Adjusts the size of the background */
+  background-position: center; /* Positions the background in the center */
+  padding: 50px; /* Adjust padding as needed */
+  color: white; /* Adjust text color for readability */
+}
+
+.home header.navbar .navbar-brand, .home .menu-header-menu-navigation-container > ul > li.menu-item, .home .block-hero .heading span, .home .block-hero .text-paragraph-20, .home .block-hero .block-buttons, .home .block-hero .block-bg, .home .block-hero .block-img, .home .block_LOG001 .block-title, .home .block_LOG001 .swiper, .home .block_AB001 .card-item, .home .block_AB003 .card-item, .home .block_FR001 .card-item, .section-content .accent-icon-heading img {
+  opacity: 0;
+}
+.gradient-animation-light {
+  font-size: 50px; /* Set your desired font size */
+  color: rgb(255, 255, 255); /* Text color */
+  -webkit-text-fill-color: rgba(0, 0, 0, 0); /* Ensures text color is transparent to show the gradient */
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+  
+  
+  
+  /* Gradient background applied to text */
+  background: radial-gradient(circle, rgb(255, 255, 255) 14%, rgb(105, 192, 75) 57%, rgb(255, 255, 255) 100%) 0% 0% / 200% text;
+  
+  /* Animation properties */
+  animation: shine 10s linear infinite normal none; /* Custom animation applied here */
+}
+
+/* Keyframes for animation */
+@keyframes shine {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.block_HR001 .container {
+  position: relative;
+  z-index: 2;
+}
+
+element.style {
+  opacity: 1;
+}
+.block_HR001 .block-caption .block-buttons {
+  display: flex;
+  gap: 16px;
+  flex-flow: wrap;
+}
+
+.btn.btn-primary {
+  background-color: rgb(105, 192, 75);
+  border-color: rgb(105, 192, 75);
+  color: rgb(7, 43, 24);
+}
+@media (max-width: 991px) {
+  .btn {
+      padding: 12px 24px;
+  }
+}
+.btn {
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 15px 32px;
+  position: relative;
+  width: auto;
+  text-decoration: none;
+  display: inline-flex
+;
+  align-items: center;
+  text-align: left;
+  border-radius: 32px;
+  text-transform: uppercase;
+}
+
+.btn.btn-primary {
+  background-color: rgb(105, 192, 75);
+  border-color: rgb(105, 192, 75);
+  color: rgb(7, 43, 24);
+}
+
+
+.btn span {
+  font-family: "FK Display Regular", sans-serif;
+  font-size: 13px;
+  line-height: 123%;
+  letter-spacing: 2px;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.btn.btn-link {
+  color: rgb(105, 192, 75);
+  border: 1px solid rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+@media (max-width: 991px) {
+  .text-paragraph-20 {
+      font-size: 16px;
+  }
+}
+
+.block_HR001 .block-caption {
+  max-width: 500px;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+element.style {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+@media (max-width: 1199px) {
+  .block_HR001 .block-caption .text-paragraph-20 {
+      max-width: 400px;
+  }
+}
+@media (max-width: 991px) {
+  .block_HR001 .block-caption .text-paragraph-20 {
+      max-width: 280px;
+  }
+}
+@media (max-width: 1199px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 100%;
+      padding: 0px 20px;
+  }
+}

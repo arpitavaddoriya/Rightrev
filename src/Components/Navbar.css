@@ -1,0 +1,184 @@
+/* Global styles for the navbar */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #0b362c; /* Green background similar to the image */
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Align logo, menu, and button across the navbar */
+  align-items: center; /* Vertically center the items */
+  width: 100%;
+}
+
+.navbar .navbar-brand img {
+  height: 50px;
+  width: auto;
+  display: inline-block; /* Ensure logo stays in the flow of the navbar */
+}
+
+.navbar-nav {
+  display: flex; /* Align menu items in a row */
+  justify-content: center; /* Center menu items horizontally */
+  align-items: center;
+  margin: 0;
+  padding: 0; /* Reset padding for the list */
+  list-style: none; /* Remove bullets from the list */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 30px; /* Space between menu items */
+}
+
+.navbar-nav .nav-link {
+  color: #fff; /* White color for text */
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  text-decoration: none; /* Remove underline from menu links */
+}
+
+/* Remove hover effect */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+  color: green; /* Keep color the same on hover */
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0; /* Remove margin from last item */
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+/* Dropdown menu styles */
+.navbar-nav .dropdown {
+  position: relative;
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333; /* Dark background for the dropdown */
+  border-bottom: none; /* Remove bottom border */
+  display: none;
+  min-width: 180px;
+  z-index: 1000;
+  padding: 10px 0;
+  list-style: none; /* Remove bullets from the list */
+  border: none; /* Remove border from dropdown items */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none; /* Remove underline from menu links */
+}
+
+.navbar-nav .dropdown:hover > .dropdown-menu {
+  display: block; /* Show dropdown menu on hover */
+}
+
+/* Button styles */
+.navbar-nav .btn-outline {
+  display: inline-flex; /* Ensure button stays aligned with the nav items */
+  color: #fff;
+  border: 2px solid green; /* Border color */
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none; /* Remove underline from menu links */
+  text-align: center;
+  margin-left: 15px; /* Optional, for spacing between button and menu items */
+}
+
+.btn-outline:hover {
+  background-color: #69c04b;
+  color: #fff;
+  border: 2px solid #69c04b;
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 991px) {
+  .navbar-nav {
+    display: none; /* Hide menu by default */
+    flex-direction: column; /* Stack the menu vertically */
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: static;
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-toggler-icon {
+    width: 35px;
+    height: 5px;
+  }
+
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    background-color: #fff;
+  }
+
+  .navbar-collapse.collapse {
+    display: block !important; /* Force the collapse to open */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-brand img {
+    height: 40px; /* Resize logo on smaller screens */
+  }
+}
+
+/* Sticky Navbar */
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar.sticky.scrolled {
+  background-color: #1a1a1a; /* Dark background when scrolled */
+}
