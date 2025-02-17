@@ -10,14 +10,92 @@ element.style {
 
 /* Block with primary green background and pattern */
 .block-hero {
+  
   background-color: #0b362c; /* Medium Green */
-  background-image: url('your-pattern-image.png'); /* Optional background pattern image */
   background-repeat: repeat; /* You can adjust this depending on your pattern */
   background-size: cover; /* Adjusts the size of the background */
   background-position: center; /* Positions the background in the center */
   padding: 50px; /* Adjust padding as needed */
   color: white; /* Adjust text color for readability */
+  
 }
+/* Ensure the section takes full height */
+.block-hero {
+  min-height: 100vh; /* Full height of the viewport */
+  display: flex;
+  align-items: center; /* Vertically centers the content */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.col-md-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-caption {
+  text-align: left; /* Align text left */
+}
+
+/* Block image container */
+.block-img {
+  width: 100%;
+  max-width: 800px; /* Maximum image width */
+  opacity: 0; /* Initially hidden for animation */
+  animation: fadeIn 2s ease-out forwards, scaleUp 1s ease-out 1s forwards; /* Applying both animations */
+}
+
+/* Image styles */
+.block-img img {
+  width: 100%; /* Ensures the image fills its container */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Prevents distortion */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Scale-up animation */
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8); /* Start slightly smaller */
+  }
+  100% {
+    transform: scale(1); /* End at original size */
+  }
+}
+
+/* Optional: Adjust for smaller screens */
+@media (max-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 100%; /* Stacks them vertically on smaller screens */
+  }
+  .block-img {
+    max-width: 400px; /* Reduce image size for mobile */
+  }
+}
+
+
+
+
+
 
 .home header.navbar .navbar-brand, .home .menu-header-menu-navigation-container > ul > li.menu-item, .home .block-hero .heading span, .home .block-hero .text-paragraph-20, .home .block-hero .block-buttons, .home .block-hero .block-bg, .home .block-hero .block-img, .home .block_LOG001 .block-title, .home .block_LOG001 .swiper, .home .block_AB001 .card-item, .home .block_AB003 .card-item, .home .block_FR001 .card-item, .section-content .accent-icon-heading img {
   opacity: 0;
@@ -38,6 +116,8 @@ element.style {
   /* Animation properties */
   animation: shine 10s linear infinite normal none; /* Custom animation applied here */
 }
+
+
 
 /* Keyframes for animation */
 @keyframes shine {

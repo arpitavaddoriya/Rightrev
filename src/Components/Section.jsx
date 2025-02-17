@@ -75,23 +75,6 @@ const Section = () => {
             </div>
           </div>
         </div>
-        <div className="block-bg">
-          <img
-            decoding="async"
-            src="https://www.rightrev.com/wp-content/themes/rightrev/img/hero-glow.webp"
-            alt="RightRev"
-          />
-        </div>
-      </section>
-
-      <section className="section-content block_LOG001 bg-primary-green-medium pt-0">
-        <div className="container">
-          <div className="block-title mb-70">
-            <h2 className="heading-7 heading text-center">
-              Powering Top Accounting Teams with Automated Revenue Recognition
-            </h2>
-          </div>
-        </div>
       </section>
     </>
   );

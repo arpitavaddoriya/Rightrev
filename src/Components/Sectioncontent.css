@@ -1,0 +1,160 @@
+/* General Section Styling */
+.section-content {
+  background-color: rgb(25, 69, 55);
+  padding-top: 0; /* Remove top padding */
+  padding-bottom: 60px; /* Bottom padding for spacing */
+  position: relative;
+}
+
+/* Title Block Styling */
+.block-title {
+  margin-bottom: 70px; /* Bottom margin to separate the title from the carousel */
+  padding: 0 15px; /* Padding on left and right for responsiveness */
+}
+
+/* Heading Style */
+.heading-7 {
+  font-family: "FK Display Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 3px;
+  color: aliceblue;
+}
+
+/* Responsive font size for smaller screens */
+@media (max-width: 768px) {
+  .heading-7 {
+    font-size: 28px; /* Reduce font size on smaller screens */
+    margin-bottom: 20px; /* Space between title and carousel */
+  }
+}
+
+@media (max-width: 480px) {
+  .heading-7 {
+    font-size: 24px; /* Further reduce font size for very small screens */
+  }
+}
+
+/* Swiper Carousel Styles */
+.swiper {
+  width: 100%; /* Ensure the swiper takes up the full width */
+  padding: 0 20px; /* Padding for the carousel */
+}
+
+/* Swiper Wrapper Styles */
+.swiper-wrapper {
+  display: flex; /* Flexbox layout for the slides */
+  align-items: center; /* Center-align items vertically */
+}
+
+/* Swiper Slide Styling */
+.swiper-slide {
+  display: flex; /* Flexbox to align images correctly */
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Center the images vertically */
+  padding: 10px; /* Add padding between slides */
+  max-width: 200px; /* Set maximum width for images */
+  flex-shrink: 0; /* Prevent the slides from shrinking */
+}
+
+.swiper-slide img {
+  width: 100%; /* Make sure images fill their container */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: contain; /* Ensure images are not distorted */
+}
+
+/* Swiper Navigation and Pagination */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff; /* White color for navigation buttons */
+  opacity: 0.7; /* Slightly transparent */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+  background-color: #ffffff; /* White color for the pagination bullets */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4caf50; /* Active bullet color (same as the background) */
+}
+
+/* Swiper breakpoints for responsiveness */
+@media (max-width: 1024px) {
+  .swiper-slide {
+    max-width: 250px; /* Allow more width for slides on tablet screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    max-width: 200px; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-slide {
+    max-width: 150px; /* Reduce the width further for very small screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.block_AB001.section-cards-no-border .card-list li .card-item {
+  background-color: rgb(240, 255, 238);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+
+.block_AB001 .card-list li .card-item {
+  border: 1px solid rgb(105, 192, 75);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  height: 100%;
+  
+}
+
+.block_AB001 .block-heading {
+  text-align: center;
+}
+
+
+
+.block_AB001 .block-heading .heading {
+  color: rgb(7, 43, 24);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+  background: linear-gradient(81deg, rgb(21, 66, 52) 33%, rgb(147, 227, 109) 57%, rgb(21, 66, 52) 69%) 0% 0% / 200% text;
+  animation: 10s linear 0s infinite normal none running shine;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+h2, .heading-2 {
+  font-family: "FK Display Regular", sans-serif;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 106%;
+  letter-spacing: -3px;
+}

@@ -6,9 +6,9 @@ const Navbar = () => {
     <header className="navbar navbar-expand-xl rightrev-navbar header-white">
       <nav className="container" aria-label="Main navigation">
         {/* Mobile Header */}
-        <div className="header-mobile">
+        <div className="header-mobile  ">
           <a
-            className="navbar-brand"
+            className="navbar-brand "
             href="https://www.rightrev.com"
             aria-label="Rightrev"
           >
@@ -176,10 +176,6 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
-          </ul>
-
-          {/* Request a Demo Button */}
-          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a
                 href="https://www.rightrev.com/request-a-demo/"
