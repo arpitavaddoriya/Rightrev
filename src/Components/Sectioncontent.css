@@ -115,9 +115,81 @@
 
 
 
-.block_AB001.section-cards-no-border .card-list li .card-item {
-  background-color: rgb(240, 255, 238);
-  border-color: rgba(0, 0, 0, 0);
+
+
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Container and overall layout */
+.container {
+  width: 100%;
+ 
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Block heading styles */
+.block-heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.accent-icon-heading {
+  display: block;
+  margin-bottom: 30px;
+}
+
+
+
+.heading-default {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text-paragraph-18 {
+  font-size: 13px;
+  color: #666;
+}
+
+.text-subtitle {
+  margin-top: 10px;
+}
+
+.text-paragraph-18 p {
+  text-align: left;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.block_AB001 .card-list {
+  display: grid
+;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 30px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 
 
@@ -125,36 +197,13 @@
   border: 1px solid rgb(105, 192, 75);
   border-radius: 20px;
   padding: 30px;
-  display: flex;
+  display: flex
+;
   flex-direction: column;
   align-items: flex-start;
   gap: 5px;
   height: 100%;
-  
-}
-
-.block_AB001 .block-heading {
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 
-
-.block_AB001 .block-heading .heading {
-  color: rgb(7, 43, 24);
-  -webkit-text-fill-color: rgba(0, 0, 0, 0);
-  animation-timeline: auto;
-  animation-range-start: normal;
-  animation-range-end: normal;
-  background: linear-gradient(81deg, rgb(21, 66, 52) 33%, rgb(147, 227, 109) 57%, rgb(21, 66, 52) 69%) 0% 0% / 200% text;
-  animation: 10s linear 0s infinite normal none running shine;
-}
-.mb-20 {
-  margin-bottom: 20px;
-}
-h2, .heading-2 {
-  font-family: "FK Display Regular", sans-serif;
-  font-style: normal;
-  font-size: 60px;
-  line-height: 106%;
-  letter-spacing: -3px;
-}

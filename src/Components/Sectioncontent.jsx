@@ -172,7 +172,7 @@ const SectionContent = () => {
           </li>
         </ul>
 
-        <div className="text-center mt-5">
+        <div className="text-center mt-5 ">
           <a
             href="https://www.rightrev.com/why-rightrev/"
             className="btn btn-primary"
