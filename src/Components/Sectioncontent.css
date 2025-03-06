@@ -152,10 +152,11 @@ body {
 
 
 .heading-default {
-  font-size: 36px;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 20px;
+  color: rgb(7, 43, 24);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(81deg, rgb(21, 66, 52) 33%, rgb(147, 227, 109) 57%, rgb(21, 66, 52) 69%) 0% 0% / 200% text;
+  animation: 10s linear 0s infinite normal none running shine;
+  font-size: 40px;
 }
 
 .text-paragraph-18 {
@@ -273,6 +274,8 @@ border-radius: 8px;  /* Rounded corners for cards */
   color: rgb(22, 66, 52);
 }
 
+
+
 /* Card description styling */
 .card-description p {
   font-size: 0.75rem;  /* Standard font size for text */
@@ -281,6 +284,8 @@ border-radius: 8px;  /* Rounded corners for cards */
   margin: 0;  /* Removes default margin */
   padding: 0;  /* Removes default padding */
 }
+
+
 
 .card-item button {
   border: 1px solid rgba(0, 0, 0, 0);
