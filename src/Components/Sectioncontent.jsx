@@ -116,7 +116,8 @@ const SectionContent = () => {
           <li>
             <div className="card-item">
               <img
-                decoding="async"
+                decoding="asyn
+                c"
                 className="card-icon mb-20"
                 src="https://www.rightrev.com/wp-content/uploads/Revenue-Accuracy.svg"
                 alt="Revenue Accuracy"
@@ -172,10 +173,10 @@ const SectionContent = () => {
           </li>
         </ul>
 
-        <div className="text-center mt-5 ">
+        <div className="flex justify-center mt-5">
           <a
             href="https://www.rightrev.com/why-rightrev/"
-            className="btn btn-primary"
+            className="btn btn-primary flex justify-center items-center"
             title="How We Stand Out"
           >
             <span>How We Stand Out</span>

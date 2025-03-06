@@ -207,3 +207,106 @@ body {
 }
 
 
+/* Container for card list */
+.card-list {
+  display: flex;
+  justify-content: center;  /* Distribute space evenly between cards */
+  gap: 2px;  /* Adds space between each card */
+  flex-wrap: nowrap;  /* Prevents wrapping of cards to the next line */
+  padding: 0;  /* Removes default padding */
+  margin: 0;  /* Removes default margin */
+  list-style: none;  /* Removes bullet points from the list */
+}
+
+/* Individual card item style */
+.card-item {
+  width: auto;  /* Let the card size adjust automatically based on its content */
+  max-width: 300px;  /* Limit the width to a max value for control */
+  text-align: flex-start;  /* Centers content inside each card */
+  box-sizing: border-box;  /* Ensures padding and margin are included in the width */
+  padding: 20px;  /* Adds padding inside each card */
+  background-color: rgb(240, 255, 238);
+  border-color: rgba(0, 0, 0, 0);
+border-radius: 8px;  /* Rounded corners for cards */
+  
+  
+}
+
+
+.btn.btn-primary {
+  background-color: rgb(105, 192, 75);
+  border-color: rgb(105, 192, 75);
+  color: rgb(7, 43, 24);
+}
+.btn {
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 15px 32px;
+  position: relative;
+  width: auto;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  text-align: left;
+  border-radius: 32px;
+  text-transform: uppercase;
+}
+
+
+
+  
+
+
+
+
+/* Card image styling */
+.card-icon {
+  width: 70px;  /* Fixed width for images */
+  height: auto;  /* Ensures aspect ratio is maintained */
+  margin-bottom: 20px;  /* Adds space below the image */
+}
+
+/* Card title (heading) styling */
+.card-title {
+  font-size:1rem;  /* Makes the title slightly larger */
+  font-weight: bold;  /* Makes the title bold */
+  margin: 10px 0;  /* Adds top and bottom margin for spacing */
+  color: rgb(22, 66, 52);
+}
+
+/* Card description styling */
+.card-description p {
+  font-size: 0.75rem;  /* Standard font size for text */
+  color: #666;  /* Light gray color for the description text */
+  line-height: 1;  /* Increases line spacing for readability */
+  margin: 0;  /* Removes default margin */
+  padding: 0;  /* Removes default padding */
+}
+
+.card-item button {
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 15px 32px;
+  position: relative;
+  width: auto;
+  text-decoration: none;
+  display: inline-flex
+;
+  align-items: center;
+  text-align: left;
+  border-radius: 32px;
+  text-transform: uppercase;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .card-list {
+    flex-direction: column;  /* Stacks the cards vertically on smaller screens */
+    align-items: center;  /* Centers the cards horizontally */
+  }
+
+  .card-item {
+    width: 80%;  /* Makes each card take up 80% of the container on smaller screens */
+    margin-bottom: 20px;  /* Adds space between stacked cards */
+  }
+}
+
+

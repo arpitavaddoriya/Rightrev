@@ -186,9 +186,11 @@ element.style {
 *, ::after, ::before {
   box-sizing: border-box;
 }
-.btn.btn-link {
+
+.btn-link {
   color: rgb(105, 192, 75);
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0); 
+  
   background-color: rgba(0, 0, 0, 0);
 }
 
