@@ -1,0 +1,110 @@
+
+
+
+/* Center image inside the Entry-section */
+.Entry-section {
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+
+  align-items: center; /* Centers vertically */
+  text-align: right;
+  padding: 50px 0;
+  background-color: #f8f9fa; /* Light background */
+  gap: 30px; /* Add some space between the image and text */
+}
+
+.entry-img {
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center;
+  width: 100%;
+}
+
+.Entry-section .entry-img img {
+  width: 60%; /* Adjust width */
+  max-width: 1000px; /* Prevents it from being too large */
+  height: auto;
+  display: block; /* Removes any extra space */
+  margin: 0; /* Ensures horizontal centering */
+}
+
+/* Text container on the right */
+.entry-text {
+  flex: 1; /* Allow the text to take space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically align the text */
+  text-align: right; /* Align text to the right */
+}
+
+/* Apply gradient animation to entry section heading */
+.entry-default.gradient-animation-dark {
+  font-family: "FK Display Regular", sans-serif;
+  font-size: 60px;
+  line-height: 106%;
+  letter-spacing: -3px;
+  
+  color: rgb(7, 43, 24);
+  text-align: right; 
+  display: block;
+
+   
+   
+  
+  /* Gradient text effect */
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(81deg, rgb(21, 66, 52) 33%, rgb(147, 227, 109) 57%, rgb(21, 66, 52) 69%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* Shine animation */
+  background-size: 200%;
+  animation: shine 10s linear infinite;
+}
+
+/* Margin bottom for spacing */
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+/* Animation for the shine effect */
+@keyframes shine {
+  0% {
+      background-position-x: 0%;
+  }
+  100% {
+      background-position-x: 200%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .entry-default.gradient-animation-dark {
+      font-size: 40px; /* Smaller font size on mobile */
+      letter-spacing: -2px;
+      text-align: center; /* Center text on small screens */
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Entry-section .entry-img img {
+    width: 80%;
+    max-width: 250px;
+  }
+}
+
+
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .Entry-section .entry-img img {
+    width: 80%;
+    max-width: 250px;
+  }
+}
+
+
+
+

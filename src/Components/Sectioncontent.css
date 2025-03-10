@@ -286,6 +286,38 @@ border-radius: 8px;  /* Rounded corners for cards */
 }
 
 
+/* UNIQUE CLASS NAME USE KAR RAHE HAIN */
+.custom-btn-primary {
+  display: inline-flex; /* Ensure button stays aligned with the nav items */
+  justify-content: center; /* Center text inside button */
+  align-items: center;
+  background-color: #69c04b; /* Light Green Background */
+  color: black;
+  border: 2px solid green; /* Border color */
+  padding: 5px 15px;
+  border-radius: 25px;
+  
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none; /* Remove underline from menu links */
+  
+}
+
+/* Parent div ko center me lane ke liye */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (if needed) */
+  margin-top: 20px; /* Add spacing above the button */
+}
+
+.custom-btn-primary:hover {
+  background-color:black;
+  color: green;
+  border: 2px solid #69c04b;
+}
+
+
 
 .card-item button {
   border: 1px solid rgba(0, 0, 0, 0);

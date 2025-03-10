@@ -176,7 +176,7 @@ const SectionContent = () => {
         <div className="flex justify-center mt-5">
           <a
             href="https://www.rightrev.com/why-rightrev/"
-            className="btn btn-primary flex justify-center items-center"
+            className="custom-btn-primary flex justify-center items-center"
             title="How We Stand Out"
           >
             <span>How We Stand Out</span>

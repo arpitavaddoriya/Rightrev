@@ -36,15 +36,17 @@
 
 /* Grid layout for cards */
 .block_AB001 .card-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  gap: 30px;
-  list-style: none;
-  padding: 0;
-  margin: 0 auto; /* Centers the grid inside its container */
-  justify-content: center; /* Ensures grid items are centered */
-  max-width: 1000px; /* Adjust as needed */
-
+  
+    display: flex; /* Flexbox use karenge taaki cards ek row me aayein */
+    flex-wrap: wrap; /* Responsive banane ke liye */
+    justify-content: center; /* Center cards horizontally */
+    list-style: none; /* Default list styling hataye */
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content; /* Ensures it takes only the required space */
+  
+  
 
 }
 
@@ -72,6 +74,7 @@
   gap: 5px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0);
+  
 }
 
 .block_AB001.section-bg-green .card-list li .card-item .card-title, .block_AB001.section-bg-green .card-list li .card-item .card-description {
