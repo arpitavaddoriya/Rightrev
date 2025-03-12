@@ -1,0 +1,114 @@
+/* Section Styling */
+.section-content {
+  padding: 50px 0;
+  background-color: #d8f3dc; /* Light green background */
+}
+
+
+
+
+
+/* Heading Styling */
+.solution-heading {
+  text-align: center;
+}
+
+.solution-default {
+  font-family: "FK Display Regular", sans-serif;
+  font-size: 40px;
+  color: #073924;
+}
+
+.solution-paragraph-18 {
+  font-family: "Scto Grotesk A Regular", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #073924;
+}
+
+.text-subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Card Layout */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.col-md-6 {
+  flex: 1;
+}
+
+.solution-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.solution-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #073924;
+}
+
+.solution-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.solution-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #073924;
+  margin-bottom: 15px;
+}
+
+.solution-description {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.solution-btn {
+  text-align: left;
+}
+
+.solution-btn .btn-primary {
+  padding: 10px 20px;
+  background-color: #34a853;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.solution-btn .btn-primary:hover {
+  background-color: #2c9447;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .solution-heading {
+    text-align: center;
+  }
+
+  .solution-item {
+    margin-bottom: 30px;
+  }
+
+  .solution-img {
+    width: 100%;
+  }
+}

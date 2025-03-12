@@ -19,15 +19,18 @@ const Entrysection = () => {
           <div className="col-12 col-lg-5">
             <div className="entry-caption">
               <h2 className="entry-default heading mb-30 gradient-animation-dark">
-                Granularity in RightRev, Visibility in Your ERP
+                Granularity in <br /> RightRev, Visibility <br /> in Your ERP
               </h2>
               <div className="entry-description text-paragraph-18">
                 <p>
-                  Easily post journal entries via APIs to your ERP, whether you
+                  Easily post journal entries via APIs to your ERP, whether you{" "}
+                  <br />
                   need detailed or summarized data. Think of RightRev as your
+                  <br />
                   ERP’s revenue sidekick—a powerful subledger that manages
-                  complex revenue arrangements and reporting while keeping your
-                  revenue data in sync with your ERP.
+                  <br />
+                  complex revenue arrangements and reporting while keeping
+                  <br /> your revenue data in sync with your ERP.
                 </p>
               </div>
             </div>

@@ -1,0 +1,100 @@
+
+.Revenu_TXT001.Revenu-bg-green-light {
+  background-color: rgb(240, 255, 238);
+  padding: 110px 0px;
+  
+}
+
+/* Apply gradient animation to entry section heading */
+.Revenu-default.gradient-animation-dark {
+  font-family: "FK Display Regular", sans-serif;
+  font-size: 70px;
+  line-height: 106%;
+  letter-spacing: -3px;
+  
+  color: rgb(7, 43, 24);
+  text-align:center; 
+  display: block;
+  font-weight: normal;
+
+   
+   
+  
+  /* Gradient text effect */
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(81deg, rgb(21, 66, 52) 33%, rgb(147, 227, 109) 57%, rgb(21, 66, 52) 69%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* Shine animation */
+  background-size: 200%;
+  animation: shine 10s linear infinite;
+}
+
+.centerd-icon-heading {
+  display: flex;
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically (if there's any vertical height) */
+  margin-bottom: 30px; /* Keeps your existing margin */
+  
+}
+
+.small-icon {
+  width: 10px; /* Adjust the width to make the icon smaller */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+
+.text-description-18 {
+  margin-bottom: 30px;
+  text-align: center; /* Center the text if needed */
+}
+
+.description-text {
+  font-size: 10px !important; /* Force the font size to change */
+  line-height: 1.5; /* Adjust line height for better readability */
+  color: #333; /* Set the color for the paragraph text */
+}
+
+.Revenu.btn-primary {
+  background-color: rgb(105, 192, 75); /* Green background */
+  border-color: rgb(105, 192, 75);
+  color: rgb(7, 43, 24); /* Dark text color */
+}
+
+.Revenu-btn {
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center; /* Centers content vertically (optional) */
+  margin-top: 20px;
+}
+
+.Revenu.btn-primary {
+  display: inline-flex; /* Ensure button stays aligned with the nav items */
+  justify-content: center; /* Center text inside button */
+  align-items: center;
+  background-color: #69c04b; /* Light Green Background */
+  color: black;
+  border: 2px solid green; /* Border color */
+  padding: 5px 15px;
+  border-radius: 25px;
+  font-size: 10px;
+  
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none; /* Remove underline from menu links */
+  
+}
+
+.Revenu.btn-primary:hover {
+  background-color:black;
+  color: green;
+  border: 2px solid #69c04b;
+}
+
+
+
+
+
+
+
