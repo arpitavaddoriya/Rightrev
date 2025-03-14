@@ -13,22 +13,23 @@ const Solutionsection = () => {
           <h2 className="solution-default heading mb-20">
             Automated revenue recognition solutions
           </h2>
-          <div className="solution-paragraph-18 text-subtitle">
+          <div className="solution-paragraph-18 solution-subtitle">
             <p>
               <span style={{ fontWeight: 400 }}>
                 We do the hard part for you.
               </span>
             </p>
-            <p style={{ textAlign: "left" }}>
+            <p style={{ textAlign: "center", fontSize: "14px" }}>
               Reduce spreadsheet reliance, alleviate audit pain, and have
               confidence in your numbers so you can focus on providing valuable
-              insights. RightRev works with your existing tech stack and
-              natively with Salesforce, providing a unified view of your revenue
-              landscape without disrupting your workflows.
+              insights. RightRev works with <br />
+              your existing tech stack and natively with Salesforce, providing a
+              unified view of your revenue landscape without disrupting your
+              workflows.
             </p>
           </div>
         </div>
-        <div className="row">
+        <div className="solution.row">
           <div className="col-12 col-md-6">
             <div className="solution-item">
               <h3 className="solution-subtitle mb-20">
