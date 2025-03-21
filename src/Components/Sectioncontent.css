@@ -267,7 +267,7 @@ border-radius: 8px;  /* Rounded corners for cards */
 }
 
 /* Card title (heading) styling */
-.card-title {
+.content-title {
   font-size:1rem;  /* Makes the title slightly larger */
   font-weight: bold;  /* Makes the title bold */
   margin: 10px 0;  /* Adds top and bottom margin for spacing */

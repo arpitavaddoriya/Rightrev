@@ -40,6 +40,8 @@
 }
 
 .block_AB003 .solution-item {
+  flex: 0 0 45%; /* Box size reduced, taking 45% of the container width */
+  max-width: 45%; /* Ensures the boxes stay side by side */
   border-radius: 20px;
   padding: 60px;
   display: flex;
@@ -48,36 +50,91 @@
   border: 1px solid rgba(75, 192, 80, 0.376);
   background: linear-gradient(45deg, rgb(16, 38, 37) 0%, rgb(21, 66, 52) 30%, rgba(21, 66, 52, 0.95) 70%, rgb(16, 39, 37) 100%);
   backdrop-filter: blur(4px);
-  position: relative;
+ 
   gap: 30px;
   height: 100%;
   overflow: hidden;
 }
 
-.block_AB003 .solution-item .solution-img {
-  position: relative;
-  z-index: 2;
-}
-.solution-img, .solution-img-bottom {
-  border-bottom-right-radius: var(--bs-card-inner-border-radius);
-  border-bottom-left-radius: var(--bs-card-inner-border-radius);
-}
-.solution-img, .solution-img-top {
-  border-top-left-radius: var(--bs-card-inner-border-radius);
-  border-top-right-radius: var(--bs-card-inner-border-radius);
-}
-.solution-img, .solution-img-bottom, .solution-img-top {
-  width: 100%;
-}
-img, svg {
-  vertical-align: middle;
-}
+
+
+
+
 
 .solution.row {
   display: flex;
   justify-content: space-between;
   gap: 10px; /* Reduce the gap between the two columns */
-  flex-wrap: wrap; /* Ensure responsiveness */
+  flex-wrap: nowrap; /* Ensure responsiveness */
+  overflow-x: auto;
+  width: 100%; /* Ensures the full width is utilized */
+}
+
+
+
+
+
+
+/* Subtitle styling */
+.solution-subtitle {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Card title styling */
+.card-title, .solution-title {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Description text */
+.solution-description p {
+  color: #ddd;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Button styling */
+.solution-btn a {
+  text-decoration: none;
+  background-color: #69c04b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.solution-btn a:hover {
+  background-color: #57a942;
+}
+
+/* Image styling */
+.solution-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+
+
+/* Prevent the boxes from wrapping even on smaller screens */
+@media (max-width: 768px) {
+  .block_AB003 .solution-row {
+    flex-wrap: nowrap; /* Prevents wrapping on smaller screens */
+    overflow-x: auto; /* Enables horizontal scrolling if necessary */
+  }
+
+  .block_AB003 .solution-item {
+    flex: 0 0 300px; /* Fixed width to keep them side by side on small screens */
+    max-width: 300px;
+  }
 }
 
 

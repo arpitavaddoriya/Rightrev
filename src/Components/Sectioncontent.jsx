@@ -122,7 +122,7 @@ const SectionContent = () => {
                 src="https://www.rightrev.com/wp-content/uploads/Revenue-Accuracy.svg"
                 alt="Revenue Accuracy"
               />
-              <h3 className="card-title heading-4">Automate Complexity</h3>
+              <h3 className="content-title heading-4">Automate Complexity</h3>
               <div className="card-description">
                 <p>
                   Revenue recognition isn’t one-size-fits-all. RightRev solves
@@ -141,7 +141,7 @@ const SectionContent = () => {
                 src="https://www.rightrev.com/wp-content/uploads/Faster.svg"
                 alt="Faster"
               />
-              <h3 className="card-title heading-4">Close with Confidence</h3>
+              <h3 className="content-title heading-4">Close with Confidence</h3>
               <div className="card-description">
                 <p>
                   Say goodbye to month-end surprises. Gain real-time revenue
@@ -160,7 +160,7 @@ const SectionContent = () => {
                 src="https://www.rightrev.com/wp-content/uploads/Scalable-Revenue-Recognition.svg"
                 alt="Scalable Revenue Recognition"
               />
-              <h3 className="card-title heading-4">Scale Without Limits</h3>
+              <h3 className="content-title heading-4">Scale Without Limits</h3>
               <div className="card-description">
                 <p>
                   As your business grows, revenue recognition can get messy.
