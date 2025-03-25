@@ -5,6 +5,7 @@ import Revenusection from "./Components/Revenusection";
 import Section from "./Components/Section";
 import Sectioncontent from "./Components/Sectioncontent";
 import Solutionsection from "./Components/Solutionsection";
+import Testimonialsection from "./Components/Testimonialsection";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Entrysection />
       <Revenusection />
       <Solutionsection />
+      <Testimonialsection />
     </div>
   );
 }

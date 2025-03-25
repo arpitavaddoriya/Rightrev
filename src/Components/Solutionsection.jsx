@@ -29,7 +29,7 @@ const Solutionsection = () => {
             </p>
           </div>
         </div>
-        <div className="solution.row">
+        <div className="solution-row">
           <div className="col-12 col-md-6">
             <div className="solution-item">
               <h3 className="solution-subtitle mb-20">
